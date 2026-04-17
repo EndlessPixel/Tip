@@ -1,0 +1,42 @@
+.prompt-box {
+  position: fixed;
+  top: 70px;
+  right: -320px;
+  width: 280px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: right 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-sizing: border-box;
+}
+
+.prompt-box.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+.prompt-box .close-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 4px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.prompt-box .close-btn:hover {
+  opacity: 1;
+}
+
+.prompt-box.show {
+  right: 20px;
+}
